@@ -7,6 +7,7 @@
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
   <body>
+    <!--Header section-->
     <header class="shadow-md">
       <div
         class="relative px-5 py-2 container mx-auto flex md:flex-col items-center md:justify-center"
@@ -16,12 +17,12 @@
         /></a>
         <ul class="text-xl hidden md:flex justify-center gap-5">
           <li
-            class="border-b-2 border-green-500 p-2 hover:border-green-400 transition-all duration-400"
+            class="border-b-2 p-2 hover:border-green-400 transition-all duration-400"
           >
             <a href="index.html">Shakllar yuzi</a>
           </li>
           <li
-            class="border-b-2 p-2 hover:border-green-400 transition-all duration-400"
+            class="border-b-2 border-green-500 p-2 hover:border-green-400 transition-all duration-400"
           >
             <a href="index2.html">Shakllar perimetri</a>
           </li>
@@ -51,6 +52,8 @@
         </ul>
       </div>
     </header>
+
+    <!-- Main section-->
     <main>
       <section class="py-4">
         <ul class="flex justify-center flex-wrap gap-3">
@@ -63,7 +66,7 @@
                 onclick="shakl.classList.add('-mt-72')"
                 class="rounded-md hisobla-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
               >
-                Yuzani hisoblash
+                Perimetrini hisoblash
               </button>
             </div>
             <div
@@ -75,13 +78,18 @@
                 placeholder="A tomon"
               />
               <input
-                oninput="uchburchak_yuzasi()"
                 type="text"
                 class="uchburchak_b text-center rounded-md"
-                placeholder="H balandlikni kiriting"
+                placeholder="B tomon"
+              />
+              <input
+                type="text"
+                class="uchburchak_c text-center rounded-md"
+                placeholder="C tomon"
+                oninput="uchburchak_perimetri()"
               />
               <p class="text-lg text-white">
-                Yuzasi : <span class="uchburchak_yuza"></span>
+                Perimetri : <span class="uchburchak_yuza"></span>
               </p>
               <button
                 onclick="shakl.classList.remove('-mt-72')"
@@ -100,7 +108,7 @@
                 onclick="shakl_1.classList.add('-mt-72')"
                 class="rounded-md hisobla-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
               >
-                Yuzani hisoblash
+                Perimetrini hisoblash
               </button>
             </div>
             <div
@@ -110,10 +118,10 @@
                 type="text"
                 class="kv_a text-center rounded-md"
                 placeholder="A tomon"
-                oninput="kv_yuzasi()"
+                oninput="kv_perimetri()"
               />
               <p class="text-lg text-white">
-                Yuzasi : <span class="kv_yuza"></span>
+                Perimetri : <span class="kv_yuza"></span>
               </p>
               <button
                 onclick="shakl_1.classList.remove('-mt-72')"
@@ -132,7 +140,7 @@
                 onclick="shakl_2.classList.add('-mt-72')"
                 class="rounded-md hisobla-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
               >
-                Yuzani hisoblash
+                Perimetrini hisoblash
               </button>
             </div>
             <div
@@ -141,16 +149,11 @@
               <input
                 type="text"
                 class="d1_a text-center rounded-md"
-                placeholder="Kichik dioganal"
-              />
-              <input
-                type="text"
-                class="d2_a text-center rounded-md"
-                placeholder="Katta dioganal"
-                oninput="romb_yuzasi()"
+                placeholder="A tomon"
+                oninput="romb_perimetri()"
               />
               <p class="text-lg text-white">
-                Yuzasi : <span class="romb_yuza"></span>
+                Perimetri : <span class="romb_yuza"></span>
               </p>
               <button
                 onclick="shakl_2.classList.remove('-mt-72')"
@@ -174,7 +177,7 @@
                 onclick="shakl_3.classList.add('-mt-72')"
                 class="rounded-md hisobla-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
               >
-                Yuzani hisoblash
+                Perimetrini hisoblash
               </button>
             </div>
             <div
@@ -189,10 +192,10 @@
                 type="text"
                 class="p_h text-center rounded-md"
                 placeholder="h tomon"
-                oninput="p_yuzasi()"
+                oninput="p_perimetri()"
               />
               <p class="text-lg text-white">
-                Yuzasi : <span class="p_yuza"></span>
+                Perimetri : <span class="p_yuza"></span>
               </p>
               <button
                 onclick="shakl_3.classList.remove('-mt-72')"
