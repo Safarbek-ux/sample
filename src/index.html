@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matematik</title>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
   </head>
   <body>
     <header class="shadow-md">
@@ -16,17 +16,17 @@
         /></a>
         <ul class="text-xl hidden md:flex justify-center gap-5">
           <li
-            class="border-2 p-2 hover:bg-gray-200 transition-all duration-400"
+            class="border-b-2 border-green-500 p-2 hover:border-green-400 transition-all duration-400"
           >
             <a href="">Shakllar yuzi</a>
           </li>
           <li
-            class="border-2 p-2 hover:bg-gray-200 transition-all duration-400"
+            class="border-b-2 p-2 hover:border-green-400 transition-all duration-400"
           >
             <a href="">Shakllar perimetri</a>
           </li>
           <li
-            class="border-2 p-2 hover:bg-gray-200 transition-all duration-400"
+            class="border-b-2 p-2 hover:border-green-400 transition-all duration-400"
           >
             <a href="">Formulalar</a>
           </li>
@@ -50,7 +50,153 @@
       </div>
     </header>
     <main>
-      <section class=""></section>
+      <section class="py-4">
+        <ul class="flex justify-center flex-wrap gap-3">
+          <li class="overflow-hidden h-72 text-center shadow-lg">
+            <div
+              class="transition-all duration-700 ease-in-out shakl flex flex-col justify-between p-4 h-72"
+            >
+              <img src="img/Triangle.jpg" width="200" height="200" alt="" />
+              <button
+                onclick="shakl.classList.add('-mt-72')"
+                class="rounded-md hisobla-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
+              >
+                Yuzani hisoblash
+              </button>
+            </div>
+            <div
+              class="hisoblash flex flex-col gap-4 p-4 h-72 w-full bg-slate-900"
+            >
+              <input
+                type="text"
+                class="uchburchak_a text-center rounded-md"
+                placeholder="A tomon"
+              />
+              <input
+                oninput="uchburchak_yuzasi()"
+                type="text"
+                class="uchburchak_b text-center rounded-md"
+                placeholder="H balandlikni kiriting"
+              />
+              <p class="text-lg text-white">
+                Yuzasi : <span class="uchburchak_yuza"></span>
+              </p>
+              <button
+                onclick="shakl.classList.remove('-mt-72')"
+                class="rounded-md ortga-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
+              >
+                Ortga
+              </button>
+            </div>
+          </li>
+          <li class="overflow-hidden h-72 text-center shadow-lg">
+            <div
+              class="transition-all duration-700 ease-in-out shakl_1 flex flex-col justify-between p-4 h-72"
+            >
+              <img src="img/Square.jpg" width="200" height="200" alt="" />
+              <button
+                onclick="shakl_1.classList.add('-mt-72')"
+                class="rounded-md hisobla-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
+              >
+                Yuzani hisoblash
+              </button>
+            </div>
+            <div
+              class="hisoblash flex flex-col gap-4 p-4 h-72 w-full bg-slate-900"
+            >
+              <input
+                type="text"
+                class="kv_a text-center rounded-md"
+                placeholder="A tomon"
+                oninput="kv_yuzasi()"
+              />
+              <p class="text-lg text-white">
+                Yuzasi : <span class="kv_yuza"></span>
+              </p>
+              <button
+                onclick="shakl_1.classList.remove('-mt-72')"
+                class="rounded-md ortga-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
+              >
+                Ortga
+              </button>
+            </div>
+          </li>
+          <li class="overflow-hidden h-72 text-center shadow-lg">
+            <div
+              class="transition-all duration-700 ease-in-out shakl_2 flex flex-col justify-between p-4 h-72"
+            >
+              <img src="img/Rhombus.jpg" width="200" height="200" alt="" />
+              <button
+                onclick="shakl_2.classList.add('-mt-72')"
+                class="rounded-md hisobla-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
+              >
+                Yuzani hisoblash
+              </button>
+            </div>
+            <div
+              class="hisoblash flex flex-col gap-4 p-4 h-72 w-full bg-slate-900"
+            >
+              <input
+                type="text"
+                class="d1_a text-center rounded-md"
+                placeholder="Kichik dioganal"
+              />
+              <input
+                type="text"
+                class="d2_a text-center rounded-md"
+                placeholder="Katta dioganal"
+                oninput="romb_yuzasi()"
+              />
+              <p class="text-lg text-white">
+                Yuzasi : <span class="romb_yuza"></span>
+              </p>
+              <button
+                onclick="shakl_2.classList.remove('-mt-72')"
+                class="rounded-md ortga-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
+              >
+                Ortga
+              </button>
+            </div>
+          </li>
+                    <li class="overflow-hidden h-72 text-center shadow-lg">
+            <div
+              class="transition-all duration-700 ease-in-out shakl_3 flex flex-col justify-between p-4 h-72"
+            >
+              <img src="img/Parallelogram.jpg" width="200" height="200" alt="" />
+              <button
+                onclick="shakl_3.classList.add('-mt-72')"
+                class="rounded-md hisobla-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
+              >
+                Yuzani hisoblash
+              </button>
+            </div>
+            <div
+              class="hisoblash flex flex-col gap-4 p-4 h-72 w-full bg-slate-900"
+            >
+              <input
+                type="text"
+                class="p_a text-center rounded-md"
+                placeholder="A tomon"
+              />
+              <input
+                type="text"
+                class="p_h text-center rounded-md"
+                placeholder="h tomon"
+                oninput="p_yuzasi()"
+              />
+              <p class="text-lg text-white">
+                Yuzasi : <span class="p_yuza"></span>
+              </p>
+              <button
+                onclick="shakl_3.classList.remove('-mt-72')"
+                class="rounded-md ortga-btn px-4 py-2 bg-green-500 text-white hover:bg-green-600"
+              >
+                Ortga
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
     <script src="js/main.js"></script>
   </body>
